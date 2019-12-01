@@ -10,6 +10,15 @@
 		493D635E2393372B00BB6950 /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D635A2393372B00BB6950 /* OSSpinLockDemo.m */; };
 		493D635F2393372B00BB6950 /* MJBaseDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D635B2393372B00BB6950 /* MJBaseDemo.m */; };
 		493D63602393372B00BB6950 /* OSSpinLockDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D635D2393372B00BB6950 /* OSSpinLockDemo2.m */; };
+		493D64172393409600BB6950 /* MutexDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D64052393409600BB6950 /* MutexDemo.m */; };
+		493D64182393409600BB6950 /* MJBaseDemo1.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D64092393409600BB6950 /* MJBaseDemo1.m */; };
+		493D64192393409600BB6950 /* OSSpinLockDemo01.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D640B2393409600BB6950 /* OSSpinLockDemo01.m */; };
+		493D641A2393409600BB6950 /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D640C2393409600BB6950 /* OSUnfairLockDemo.m */; };
+		493D641B2393409600BB6950 /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D640E2393409600BB6950 /* NSLockDemo.m */; };
+		493D641C2393409600BB6950 /* OSSpinLockDemo02.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D640F2393409600BB6950 /* OSSpinLockDemo02.m */; };
+		493D641D2393409600BB6950 /* NSConditionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D64112393409600BB6950 /* NSConditionDemo.m */; };
+		493D641E2393409600BB6950 /* MutexDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D64122393409600BB6950 /* MutexDemo2.m */; };
+		493D641F2393409600BB6950 /* MutexDemo3.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D64142393409600BB6950 /* MutexDemo3.m */; };
 		493E086B238CE3230079D893 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E086A238CE3230079D893 /* AppDelegate.m */; };
 		493E086E238CE3230079D893 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E086D238CE3230079D893 /* SceneDelegate.m */; };
 		493E0871238CE3230079D893 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E0870238CE3230079D893 /* ViewController.m */; };
@@ -31,6 +40,24 @@
 		493D635B2393372B00BB6950 /* MJBaseDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBaseDemo.m; sourceTree = "<group>"; };
 		493D635C2393372B00BB6950 /* OSSpinLockDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo2.h; sourceTree = "<group>"; };
 		493D635D2393372B00BB6950 /* OSSpinLockDemo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo2.m; sourceTree = "<group>"; };
+		493D64052393409600BB6950 /* MutexDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutexDemo.m; sourceTree = "<group>"; };
+		493D64062393409600BB6950 /* OSSpinLockDemo01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo01.h; sourceTree = "<group>"; };
+		493D64072393409600BB6950 /* OSUnfairLockDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUnfairLockDemo.h; sourceTree = "<group>"; };
+		493D64082393409600BB6950 /* MJBaseDemo1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBaseDemo1.h; sourceTree = "<group>"; };
+		493D64092393409600BB6950 /* MJBaseDemo1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBaseDemo1.m; sourceTree = "<group>"; };
+		493D640A2393409600BB6950 /* MutexDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutexDemo2.h; sourceTree = "<group>"; };
+		493D640B2393409600BB6950 /* OSSpinLockDemo01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo01.m; sourceTree = "<group>"; };
+		493D640C2393409600BB6950 /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
+		493D640D2393409600BB6950 /* NSLockDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLockDemo.h; sourceTree = "<group>"; };
+		493D640E2393409600BB6950 /* NSLockDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLockDemo.m; sourceTree = "<group>"; };
+		493D640F2393409600BB6950 /* OSSpinLockDemo02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo02.m; sourceTree = "<group>"; };
+		493D64102393409600BB6950 /* MutexDemo3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutexDemo3.h; sourceTree = "<group>"; };
+		493D64112393409600BB6950 /* NSConditionDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSConditionDemo.m; sourceTree = "<group>"; };
+		493D64122393409600BB6950 /* MutexDemo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutexDemo2.m; sourceTree = "<group>"; };
+		493D64132393409600BB6950 /* NSConditionDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSConditionDemo.h; sourceTree = "<group>"; };
+		493D64142393409600BB6950 /* MutexDemo3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutexDemo3.m; sourceTree = "<group>"; };
+		493D64152393409600BB6950 /* OSSpinLockDemo02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo02.h; sourceTree = "<group>"; };
+		493D64162393409600BB6950 /* MutexDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutexDemo.h; sourceTree = "<group>"; };
 		493E0866238CE3230079D893 /* iOS多线程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS多线程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		493E0869238CE3230079D893 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		493E086A238CE3230079D893 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +104,31 @@
 				493D635D2393372B00BB6950 /* OSSpinLockDemo2.m */,
 			);
 			path = Locks;
+			sourceTree = "<group>";
+		};
+		493D63E92393406600BB6950 /* Locks01 */ = {
+			isa = PBXGroup;
+			children = (
+				493D64082393409600BB6950 /* MJBaseDemo1.h */,
+				493D64092393409600BB6950 /* MJBaseDemo1.m */,
+				493D64162393409600BB6950 /* MutexDemo.h */,
+				493D64052393409600BB6950 /* MutexDemo.m */,
+				493D640A2393409600BB6950 /* MutexDemo2.h */,
+				493D64122393409600BB6950 /* MutexDemo2.m */,
+				493D64102393409600BB6950 /* MutexDemo3.h */,
+				493D64142393409600BB6950 /* MutexDemo3.m */,
+				493D64132393409600BB6950 /* NSConditionDemo.h */,
+				493D64112393409600BB6950 /* NSConditionDemo.m */,
+				493D640D2393409600BB6950 /* NSLockDemo.h */,
+				493D640E2393409600BB6950 /* NSLockDemo.m */,
+				493D64062393409600BB6950 /* OSSpinLockDemo01.h */,
+				493D640B2393409600BB6950 /* OSSpinLockDemo01.m */,
+				493D64152393409600BB6950 /* OSSpinLockDemo02.h */,
+				493D640F2393409600BB6950 /* OSSpinLockDemo02.m */,
+				493D64072393409600BB6950 /* OSUnfairLockDemo.h */,
+				493D640C2393409600BB6950 /* OSUnfairLockDemo.m */,
+			);
+			path = Locks01;
 			sourceTree = "<group>";
 		};
 		493E085D238CE3230079D893 = {
@@ -159,6 +211,7 @@
 			children = (
 				49465778239290FE0037AF24 /* SafeQuestionLockViewController.h */,
 				49465779239290FE0037AF24 /* SafeQuestionLockViewController.m */,
+				493D63E92393406600BB6950 /* Locks01 */,
 				493D634E2393370400BB6950 /* Locks */,
 			);
 			path = "存取钱加锁-安全";
@@ -234,17 +287,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493D64182393409600BB6950 /* MJBaseDemo1.m in Sources */,
+				493D641C2393409600BB6950 /* OSSpinLockDemo02.m in Sources */,
 				493E0871238CE3230079D893 /* ViewController.m in Sources */,
+				493D641A2393409600BB6950 /* OSUnfairLockDemo.m in Sources */,
 				493D635E2393372B00BB6950 /* OSSpinLockDemo.m in Sources */,
 				4946577A239290FE0037AF24 /* SafeQuestionLockViewController.m in Sources */,
 				493E086B238CE3230079D893 /* AppDelegate.m in Sources */,
+				493D641D2393409600BB6950 /* NSConditionDemo.m in Sources */,
+				493D64172393409600BB6950 /* MutexDemo.m in Sources */,
 				493E0885238CE35C0079D893 /* Sync&ASyncViewController.m in Sources */,
 				493E0889238CE5670079D893 /* Thread&RunloopViewController.m in Sources */,
+				493D64192393409600BB6950 /* OSSpinLockDemo01.m in Sources */,
 				493E087C238CE3270079D893 /* main.m in Sources */,
 				493D635F2393372B00BB6950 /* MJBaseDemo.m in Sources */,
+				493D641F2393409600BB6950 /* MutexDemo3.m in Sources */,
 				493D63602393372B00BB6950 /* OSSpinLockDemo2.m in Sources */,
 				493E0891238CE88A0079D893 /* SafeQuestionViewController.m in Sources */,
 				493E088D238CE5E80079D893 /* DispatchGroupViewController.m in Sources */,
+				493D641E2393409600BB6950 /* MutexDemo2.m in Sources */,
+				493D641B2393409600BB6950 /* NSLockDemo.m in Sources */,
 				493E086E238CE3230079D893 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
