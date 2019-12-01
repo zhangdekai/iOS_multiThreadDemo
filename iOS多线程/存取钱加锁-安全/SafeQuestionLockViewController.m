@@ -9,18 +9,22 @@
 #import "SafeQuestionLockViewController.h"
 #import <libkern/OSAtomic.h>
 #import <os/lock.h>
+#import "MJBaseDemo.h"
+#import "OSSpinLockDemo2.h"
 
 
 @interface SafeQuestionLockViewController ()
 
 @property (assign, nonatomic) int money;
 @property (assign, nonatomic) int ticketsCount;
+
 //@property (assign, nonatomic) OSSpinLock lock;
 //@property (assign, nonatomic) OSSpinLock lock1;//10.0废弃
 
 @property (assign, nonatomic)os_unfair_lock lock;
 @property (assign, nonatomic)os_unfair_lock lock1;
 
+@property (strong, nonatomic) MJBaseDemo *demo;
 
 
 @end
@@ -40,6 +44,9 @@
     
     [self ticketTest];
     [self moneyTest];
+    
+
+    [self testMJLOCK];
 }
 
 /**
@@ -136,7 +143,7 @@
     //    }
     
     // 加锁
-//    OSSpinLockLock(&_lock);
+    //    OSSpinLockLock(&_lock);
     
     os_unfair_lock_lock(&_lock);
     
@@ -147,7 +154,7 @@
     NSLog(@"还剩%d张票 - %@", oldTicketsCount, [NSThread currentThread]);
     
     // 解锁
-//    OSSpinLockUnlock(&_lock);
+    //    OSSpinLockUnlock(&_lock);
     os_unfair_lock_unlock(&_lock);
     
 }
@@ -180,6 +187,28 @@
     });
 }
 
+//存取钱、买票 优化。
+- (void)testMJLOCK {
+    
+    MJBaseDemo *demo = [[OSSpinLockDemo2 alloc] init];
+    [demo ticketTest];
+    [demo moneyTest];
+    
+    for (int i = 0; i < 10; i++) {
+        [[[NSThread alloc] initWithTarget:self selector:@selector(test) object:nil] start];
+    }
+}
+
+- (int)test
+{
+    int a = 10;
+    int b = 20;
+    
+    NSLog(@"%p", self.demo);
+    
+    int c = a + b;
+    return c;
+}
 
 
 @end

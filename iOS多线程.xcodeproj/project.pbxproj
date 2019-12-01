@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493D635E2393372B00BB6950 /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D635A2393372B00BB6950 /* OSSpinLockDemo.m */; };
+		493D635F2393372B00BB6950 /* MJBaseDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D635B2393372B00BB6950 /* MJBaseDemo.m */; };
+		493D63602393372B00BB6950 /* OSSpinLockDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 493D635D2393372B00BB6950 /* OSSpinLockDemo2.m */; };
 		493E086B238CE3230079D893 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E086A238CE3230079D893 /* AppDelegate.m */; };
 		493E086E238CE3230079D893 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E086D238CE3230079D893 /* SceneDelegate.m */; };
 		493E0871238CE3230079D893 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E0870238CE3230079D893 /* ViewController.m */; };
@@ -22,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		493D63582393372B00BB6950 /* MJBaseDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBaseDemo.h; sourceTree = "<group>"; };
+		493D63592393372B00BB6950 /* OSSpinLockDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo.h; sourceTree = "<group>"; };
+		493D635A2393372B00BB6950 /* OSSpinLockDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo.m; sourceTree = "<group>"; };
+		493D635B2393372B00BB6950 /* MJBaseDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBaseDemo.m; sourceTree = "<group>"; };
+		493D635C2393372B00BB6950 /* OSSpinLockDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo2.h; sourceTree = "<group>"; };
+		493D635D2393372B00BB6950 /* OSSpinLockDemo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo2.m; sourceTree = "<group>"; };
 		493E0866238CE3230079D893 /* iOS多线程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS多线程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		493E0869238CE3230079D893 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		493E086A238CE3230079D893 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		493D634E2393370400BB6950 /* Locks */ = {
+			isa = PBXGroup;
+			children = (
+				493D63582393372B00BB6950 /* MJBaseDemo.h */,
+				493D635B2393372B00BB6950 /* MJBaseDemo.m */,
+				493D63592393372B00BB6950 /* OSSpinLockDemo.h */,
+				493D635A2393372B00BB6950 /* OSSpinLockDemo.m */,
+				493D635C2393372B00BB6950 /* OSSpinLockDemo2.h */,
+				493D635D2393372B00BB6950 /* OSSpinLockDemo2.m */,
+			);
+			path = Locks;
+			sourceTree = "<group>";
+		};
 		493E085D238CE3230079D893 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +159,7 @@
 			children = (
 				49465778239290FE0037AF24 /* SafeQuestionLockViewController.h */,
 				49465779239290FE0037AF24 /* SafeQuestionLockViewController.m */,
+				493D634E2393370400BB6950 /* Locks */,
 			);
 			path = "存取钱加锁-安全";
 			sourceTree = "<group>";
@@ -212,11 +235,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				493E0871238CE3230079D893 /* ViewController.m in Sources */,
+				493D635E2393372B00BB6950 /* OSSpinLockDemo.m in Sources */,
 				4946577A239290FE0037AF24 /* SafeQuestionLockViewController.m in Sources */,
 				493E086B238CE3230079D893 /* AppDelegate.m in Sources */,
 				493E0885238CE35C0079D893 /* Sync&ASyncViewController.m in Sources */,
 				493E0889238CE5670079D893 /* Thread&RunloopViewController.m in Sources */,
 				493E087C238CE3270079D893 /* main.m in Sources */,
+				493D635F2393372B00BB6950 /* MJBaseDemo.m in Sources */,
+				493D63602393372B00BB6950 /* OSSpinLockDemo2.m in Sources */,
 				493E0891238CE88A0079D893 /* SafeQuestionViewController.m in Sources */,
 				493E088D238CE5E80079D893 /* DispatchGroupViewController.m in Sources */,
 				493E086E238CE3230079D893 /* SceneDelegate.m in Sources */,
