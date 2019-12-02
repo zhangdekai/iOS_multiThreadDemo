@@ -8,41 +8,34 @@
 
 #import "OSSpinLockDemo2.h"
 #import <libkern/OSAtomic.h>
-#import <os/lock.h>
-
 
 @implementation OSSpinLockDemo2
 
-static os_unfair_lock moneyLock_;
-
+static OSSpinLock moneyLock_;
 + (void)initialize
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        moneyLock_ = OS_UNFAIR_LOCK_INIT;
+        moneyLock_ = 0;
     });
 }
 
 - (void)__drawMoney
 {
-//    OSSpinLockLock(&moneyLock_);
-    os_unfair_lock_lock(&moneyLock_);
+    OSSpinLockLock(&moneyLock_);
     
     [super __drawMoney];
     
-//    OSSpinLockUnlock(&moneyLock_);
-    os_unfair_lock_unlock(&moneyLock_);
+    OSSpinLockUnlock(&moneyLock_);
 }
 
 - (void)__saveMoney
 {
-//    OSSpinLockLock(&moneyLock_);
-    os_unfair_lock_lock(&moneyLock_);
+    OSSpinLockLock(&moneyLock_);
     
     [super __saveMoney];
     
-//    OSSpinLockUnlock(&moneyLock_);
-    os_unfair_lock_unlock(&moneyLock_);
+    OSSpinLockUnlock(&moneyLock_);
 }
 
 - (void)__saleTicket
@@ -53,15 +46,13 @@ static os_unfair_lock moneyLock_;
 //        str = [NSString stringWithFormat:@"123"];
 //    });
     
-    static os_unfair_lock ticketLock = OS_UNFAIR_LOCK_INIT;
+    static OSSpinLock ticketLock = OS_SPINLOCK_INIT;
     
-//    OSSpinLockLock(&ticketLock);
-    os_unfair_lock_lock(&ticketLock);
+    OSSpinLockLock(&ticketLock);
     
     [super __saleTicket];
     
-//    OSSpinLockUnlock(&ticketLock);
-    os_unfair_lock_unlock(&ticketLock);
+    OSSpinLockUnlock(&ticketLock);
 }
 
 @end

@@ -66,6 +66,49 @@
         }
     });
     
+    // dispatch_group_wait:同步操作，不推荐使用。
+//    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);//一直等待。
+    
+    
+}
+
+- (void)testDispatchGroupEnter {
+    
+    dispatch_group_t group = dispatch_group_create();
+    
+    dispatch_queue_t queue = dispatch_queue_create("com.iosMultiThread.groupenter", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_group_async(group, queue, ^{
+        dispatch_group_enter(group);
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            sleep(4);
+            NSLog(@"模拟请求1-----%@", [NSThread currentThread]);
+            dispatch_group_leave(group);
+        });
+    });
+    
+    dispatch_group_async(group, queue, ^{
+        dispatch_group_enter(group);
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            sleep(3);
+            NSLog(@"模拟请求2-----%@", [NSThread currentThread]);
+            dispatch_group_leave(group);
+        });
+    });
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"全部结束-----%@", [NSThread currentThread]);
+    });
+    
+    /*
+     
+     全部开始-----<NSThread: 0x60000007e980>{number = 1, name = main}
+     模拟请求2-----<NSThread: 0x604000460840>{number = 3, name = (null)}
+     模拟请求1-----<NSThread: 0x6000004676c0>{number = 4, name = (null)}
+     全部结束-----<NSThread: 0x60000007e980>{number = 1, name = main}
+     
+     */
+    
     
 }
 

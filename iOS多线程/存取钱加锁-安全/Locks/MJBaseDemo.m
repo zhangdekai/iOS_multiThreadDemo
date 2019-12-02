@@ -15,6 +15,8 @@
 
 @implementation MJBaseDemo
 
+- (void)otherTest {}
+
 /**
  存钱、取钱演示
  */
@@ -83,6 +85,10 @@
     self.ticketsCount = 15;
     
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    
+//    for (int i = 0; i < 10; i++) {
+//        [[[NSThread alloc] initWithTarget:self selector:@selector(__saleTicket) object:nil] start];
+//    }
     
     dispatch_async(queue, ^{
         for (int i = 0; i < 5; i++) {

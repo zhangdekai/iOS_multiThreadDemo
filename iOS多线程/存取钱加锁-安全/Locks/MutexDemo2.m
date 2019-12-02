@@ -22,11 +22,18 @@
     // 初始化属性
     pthread_mutexattr_t attr;
     pthread_mutexattr_init(&attr);
-    pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE);
+    pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE);//recursive 递归
+    /*
+     #define PTHREAD_MUTEX_NORMAL        0
+     #define PTHREAD_MUTEX_ERRORCHECK    1
+     #define PTHREAD_MUTEX_RECURSIVE        2
+     #define PTHREAD_MUTEX_DEFAULT        PTHREAD_MUTEX_NORMAL
+     */
+    
     // 初始化锁
     pthread_mutex_init(mutex, &attr);
     // 销毁属性
-    pthread_mutexattr_destroy(&attr);
+//    pthread_mutexattr_destroy(&attr);
 }
 
 - (instancetype)init

@@ -61,12 +61,12 @@
     
     [self.data addObject:@"Test"];
     NSLog(@"添加了元素");
+    
     // 信号
     [self.condition signal];
     
-    // 广播
-//    [self.condition broadcast];
-    [self.condition unlock];
+    sleep(2);
     
+    [self.condition unlock];
 }
 @end

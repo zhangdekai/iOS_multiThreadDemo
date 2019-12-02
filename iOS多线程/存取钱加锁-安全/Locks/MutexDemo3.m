@@ -21,16 +21,16 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        // 初始化属性
+        // 初始化 - 属性
         pthread_mutexattr_t attr;
         pthread_mutexattr_init(&attr);
         pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_RECURSIVE);
-        // 初始化锁
+        // 初始化 - 锁
         pthread_mutex_init(&_mutex, &attr);
         // 销毁属性
-        pthread_mutexattr_destroy(&attr);
+//        pthread_mutexattr_destroy(&attr);
         
-        // 初始化条件
+        // 初始化 - 条件
         pthread_cond_init(&_cond, NULL);
         
         self.data = [NSMutableArray array];

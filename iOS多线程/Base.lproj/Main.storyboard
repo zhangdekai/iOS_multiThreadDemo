@@ -22,10 +22,19 @@
                                     <action selector="jumpToSync:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rln-mm-cim"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usb-Cs-foJ">
+                                <rect key="frame" x="153" y="207" width="108" height="30"/>
+                                <state key="normal" title="测试信号量功能"/>
+                                <connections>
+                                    <action selector="jumpTosignalTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2g7-nw-n6N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="gSP-U8-JAj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fkv-U4-ufN"/>
+                            <constraint firstItem="Usb-Cs-foJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e3A-fN-LgU"/>
+                            <constraint firstItem="Usb-Cs-foJ" firstAttribute="top" secondItem="gSP-U8-JAj" secondAttribute="bottom" constant="42" id="gq4-rG-TJq"/>
                             <constraint firstItem="gSP-U8-JAj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="91" id="wIe-gC-8sX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="127"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
 </document>

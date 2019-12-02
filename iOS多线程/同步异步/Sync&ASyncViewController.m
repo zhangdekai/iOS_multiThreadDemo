@@ -129,6 +129,41 @@
     dispatch_queue_t queue5 = dispatch_queue_create("queu5", DISPATCH_QUEUE_CONCURRENT);
     
     NSLog(@"%p %p %p %p %p", queue1, queue2, queue3, queue4, queue5);
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        //网络请求
+        //异步绘制图像
+        //数据库访问等
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //刷新UI
+        });
+    });
+    [self testSerialQueue];
+}
+
+- (void)testSerialQueue {
+    
+    //创建一个串行队列DISPATCH_QUEUE_SERIAL   并行队列：DISPATCH_QUEUE_CONCURRENT
+    dispatch_queue_t queue = dispatch_queue_create("com.iosMultiThread.", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue, ^{
+        NSLog(@"%@---0", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"%@---1", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"%@---2", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"%@---3", [NSThread currentThread]);
+    });
+    
+    // 0 1 2 3 在同一个线程中，按顺序打印。
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        // do something
+    });
+    
 }
 
 

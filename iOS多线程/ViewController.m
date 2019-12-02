@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Sync&ASyncViewController.h"
+#import "DispatchBarrierViewController.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,13 @@
 - (IBAction)jumpToSync:(id)sender {
     
     Sync_ASyncViewController *vc = [[Sync_ASyncViewController alloc]init];
+    
+    [self presentViewController:vc animated:true completion:nil];
+}
+
+- (IBAction)jumpTosignalTest:(id)sender {
+    
+    DispatchBarrierViewController *vc = [[DispatchBarrierViewController alloc]init];
     
     [self presentViewController:vc animated:true completion:nil];
 }

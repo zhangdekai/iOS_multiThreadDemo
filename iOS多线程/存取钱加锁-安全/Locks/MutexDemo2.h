@@ -1,13 +1,13 @@
 //
-//  NSConditionDemo.h
+//  MutexDemo2.h
 //  Interview04-线程同步
 //
 //  Created by MJ Lee on 2018/6/11.
 //  Copyright © 2018年 MJ Lee. All rights reserved.
 //
 
-#import "MJBaseDemo1.h"
+#import "MJBaseDemo.h"
 
-@interface NSConditionDemo : MJBaseDemo1
+@interface MutexDemo2 : MJBaseDemo
 
 @end
