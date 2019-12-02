@@ -32,6 +32,7 @@
 		494419AE239517F900C1B070 /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4944199F239517F900C1B070 /* OSSpinLockDemo.m */; };
 		494419AF239517F900C1B070 /* MutexDemo3.m in Sources */ = {isa = PBXBuildFile; fileRef = 494419A0239517F900C1B070 /* MutexDemo3.m */; };
 		494419B0239517F900C1B070 /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 494419A3239517F900C1B070 /* NSLockDemo.m */; };
+		494419B4239547BD00C1B070 /* SafeReadWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494419B3239547BD00C1B070 /* SafeReadWriteViewController.m */; };
 		4946577A239290FE0037AF24 /* SafeQuestionLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49465779239290FE0037AF24 /* SafeQuestionLockViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,8 @@
 		494419A1239517F900C1B070 /* NSLockDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLockDemo.h; sourceTree = "<group>"; };
 		494419A2239517F900C1B070 /* MutexDemo3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutexDemo3.h; sourceTree = "<group>"; };
 		494419A3239517F900C1B070 /* NSLockDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLockDemo.m; sourceTree = "<group>"; };
+		494419B2239547BD00C1B070 /* SafeReadWriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeReadWriteViewController.h; sourceTree = "<group>"; };
+		494419B3239547BD00C1B070 /* SafeReadWriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeReadWriteViewController.m; sourceTree = "<group>"; };
 		49465778239290FE0037AF24 /* SafeQuestionLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeQuestionLockViewController.h; sourceTree = "<group>"; };
 		49465779239290FE0037AF24 /* SafeQuestionLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeQuestionLockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +130,7 @@
 		493E0868238CE3230079D893 /* iOS多线程 */ = {
 			isa = PBXGroup;
 			children = (
+				494419B12395479700C1B070 /* 读写安全 */,
 				49465777239290DE0037AF24 /* 存取钱加锁-安全 */,
 				493E088E238CE8680079D893 /* 安全隐患-存取钱 */,
 				493D64242393730000BB6950 /* dispatch_api */,
@@ -215,6 +219,15 @@
 				49441998239517F900C1B070 /* SynchronizedDemo.m */,
 			);
 			path = Locks;
+			sourceTree = "<group>";
+		};
+		494419B12395479700C1B070 /* 读写安全 */ = {
+			isa = PBXGroup;
+			children = (
+				494419B2239547BD00C1B070 /* SafeReadWriteViewController.h */,
+				494419B3239547BD00C1B070 /* SafeReadWriteViewController.m */,
+			);
+			path = "读写安全";
 			sourceTree = "<group>";
 		};
 		49465777239290DE0037AF24 /* 存取钱加锁-安全 */ = {
@@ -310,6 +323,7 @@
 				4946577A239290FE0037AF24 /* SafeQuestionLockViewController.m in Sources */,
 				493E086B238CE3230079D893 /* AppDelegate.m in Sources */,
 				494419AF239517F900C1B070 /* MutexDemo3.m in Sources */,
+				494419B4239547BD00C1B070 /* SafeReadWriteViewController.m in Sources */,
 				493E0885238CE35C0079D893 /* Sync&ASyncViewController.m in Sources */,
 				493E0889238CE5670079D893 /* Thread&RunloopViewController.m in Sources */,
 				493E087C238CE3270079D893 /* main.m in Sources */,
